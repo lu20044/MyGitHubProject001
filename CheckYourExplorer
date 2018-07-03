@@ -1,0 +1,7 @@
+<script>
+<!--
+document.write("您的浏览器支持JavaScript脚本!");
+//-->
+</script>
+
+//检测你的浏览器是否支持JavaScript
