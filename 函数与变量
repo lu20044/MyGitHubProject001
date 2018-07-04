@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>	
+<head> 
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+</head>
+<body>
+
+<p>点击这个按钮，来调用带参数的函数。</p>
+<button onclick="myFunction('Harry Potter','Wizard')">点击这里</button>
+<script>
+function myFunction(name,job){
+	alert("Welcome " + name + ", the " + job);
+}
+</script>
+
+</body>
+</html>
+
+
+var var1 = 1; // 不可配置全局属性
+var2 = 2; // 没有使用 var 声明，可配置全局属性
+
+console.log(this.var1); // 1
+console.log(window.var1); // 1
+
+delete var1; // false 无法删除
+console.log(var1); //1
+
+delete var2; 
+console.log(delete var2); // true
+console.log(var2); // 已经删除 报错变量未定义
