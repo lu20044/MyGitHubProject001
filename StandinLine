@@ -1,0 +1,14 @@
+function queue(arr, item) {
+  // 请把你的代码写在这里
+  item = arr.push(item);
+  a = arr.shift();
+  return a; // 请修改这一行
+}
+
+// 初始化测试数据
+var testArr = [5,6,7,8,9];
+
+// 控制台输出
+console.log("Before: " + JSON.stringify(testArr));
+console.log(queue(testArr, 1)); // 你可以修改这一行来测试你的代码
+console.log("After: " + JSON.stringify(testArr));
