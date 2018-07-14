@@ -1,0 +1,18 @@
+function palindrome(str) {
+  // 请把你的代码写在这里
+  var array = "";
+  var reArray = "";
+  var re = /\W/gi;
+  array = str.replace(re,"");  //替换非字母（包括下划线）字符
+  array = array.replace(/_/gi,""); //替换下划线
+  array.split("");
+  function reArr(arr){
+    var a = arr.split("");
+    return a.reverse();
+  }
+  reArray = reArr(array).join("");
+  //return  array;
+  return  reArray.toLowerCase() == array.toLowerCase();
+}
+
+palindrome("My age is 0, _0 si ega__ ym.");
